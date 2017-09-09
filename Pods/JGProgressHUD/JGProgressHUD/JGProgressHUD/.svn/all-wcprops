@@ -1,0 +1,143 @@
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/souying/!svn/ver/41329/%E8%B4%B7%E6%AC%BE%E8%B6%85%E5%B8%82/SRC/ios/branches/develop/Pods/JGProgressHUD/JGProgressHUD/JGProgressHUD
+END
+JGProgressHUDAnimation.m
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/svn/souying/!svn/ver/41329/%E8%B4%B7%E6%AC%BE%E8%B6%85%E5%B8%82/SRC/ios/branches/develop/Pods/JGProgressHUD/JGProgressHUD/JGProgressHUD/JGProgressHUDAnimation.m
+END
+JGProgressHUD.m
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/souying/!svn/ver/41329/%E8%B4%B7%E6%AC%BE%E8%B6%85%E5%B8%82/SRC/ios/branches/develop/Pods/JGProgressHUD/JGProgressHUD/JGProgressHUD/JGProgressHUD.m
+END
+JGProgressHUDIndeterminateIndicatorView.m
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/svn/souying/!svn/ver/41329/%E8%B4%B7%E6%AC%BE%E8%B6%85%E5%B8%82/SRC/ios/branches/develop/Pods/JGProgressHUD/JGProgressHUD/JGProgressHUD/JGProgressHUDIndeterminateIndicatorView.m
+END
+JGProgressHUDErrorIndicatorView.m
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/svn/souying/!svn/ver/41329/%E8%B4%B7%E6%AC%BE%E8%B6%85%E5%B8%82/SRC/ios/branches/develop/Pods/JGProgressHUD/JGProgressHUD/JGProgressHUD/JGProgressHUDErrorIndicatorView.m
+END
+JGProgressHUDRingIndicatorView.h
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/svn/souying/!svn/ver/41329/%E8%B4%B7%E6%AC%BE%E8%B6%85%E5%B8%82/SRC/ios/branches/develop/Pods/JGProgressHUD/JGProgressHUD/JGProgressHUD/JGProgressHUDRingIndicatorView.h
+END
+JGProgressHUD-Defines.h
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/svn/souying/!svn/ver/41329/%E8%B4%B7%E6%AC%BE%E8%B6%85%E5%B8%82/SRC/ios/branches/develop/Pods/JGProgressHUD/JGProgressHUD/JGProgressHUD/JGProgressHUD-Defines.h
+END
+JGProgressHUDRingIndicatorView.m
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/svn/souying/!svn/ver/41329/%E8%B4%B7%E6%AC%BE%E8%B6%85%E5%B8%82/SRC/ios/branches/develop/Pods/JGProgressHUD/JGProgressHUD/JGProgressHUD/JGProgressHUDRingIndicatorView.m
+END
+JGProgressHUDFadeAnimation.h
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/svn/souying/!svn/ver/41329/%E8%B4%B7%E6%AC%BE%E8%B6%85%E5%B8%82/SRC/ios/branches/develop/Pods/JGProgressHUD/JGProgressHUD/JGProgressHUD/JGProgressHUDFadeAnimation.h
+END
+JGProgressHUDSuccessIndicatorView.h
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/svn/souying/!svn/ver/41329/%E8%B4%B7%E6%AC%BE%E8%B6%85%E5%B8%82/SRC/ios/branches/develop/Pods/JGProgressHUD/JGProgressHUD/JGProgressHUD/JGProgressHUDSuccessIndicatorView.h
+END
+JGProgressHUDFadeZoomAnimation.h
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/svn/souying/!svn/ver/41329/%E8%B4%B7%E6%AC%BE%E8%B6%85%E5%B8%82/SRC/ios/branches/develop/Pods/JGProgressHUD/JGProgressHUD/JGProgressHUD/JGProgressHUDFadeZoomAnimation.h
+END
+JGProgressHUDFadeAnimation.m
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/svn/souying/!svn/ver/41329/%E8%B4%B7%E6%AC%BE%E8%B6%85%E5%B8%82/SRC/ios/branches/develop/Pods/JGProgressHUD/JGProgressHUD/JGProgressHUD/JGProgressHUDFadeAnimation.m
+END
+JGProgressHUDPieIndicatorView.h
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/svn/souying/!svn/ver/41329/%E8%B4%B7%E6%AC%BE%E8%B6%85%E5%B8%82/SRC/ios/branches/develop/Pods/JGProgressHUD/JGProgressHUD/JGProgressHUD/JGProgressHUDPieIndicatorView.h
+END
+JGProgressHUDSuccessIndicatorView.m
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/svn/souying/!svn/ver/41329/%E8%B4%B7%E6%AC%BE%E8%B6%85%E5%B8%82/SRC/ios/branches/develop/Pods/JGProgressHUD/JGProgressHUD/JGProgressHUD/JGProgressHUDSuccessIndicatorView.m
+END
+JGProgressHUDIndicatorView.h
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/svn/souying/!svn/ver/41329/%E8%B4%B7%E6%AC%BE%E8%B6%85%E5%B8%82/SRC/ios/branches/develop/Pods/JGProgressHUD/JGProgressHUD/JGProgressHUD/JGProgressHUDIndicatorView.h
+END
+JGProgressHUDFadeZoomAnimation.m
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/svn/souying/!svn/ver/41329/%E8%B4%B7%E6%AC%BE%E8%B6%85%E5%B8%82/SRC/ios/branches/develop/Pods/JGProgressHUD/JGProgressHUD/JGProgressHUD/JGProgressHUDFadeZoomAnimation.m
+END
+JGProgressHUDImageIndicatorView.h
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/svn/souying/!svn/ver/41329/%E8%B4%B7%E6%AC%BE%E8%B6%85%E5%B8%82/SRC/ios/branches/develop/Pods/JGProgressHUD/JGProgressHUD/JGProgressHUD/JGProgressHUDImageIndicatorView.h
+END
+JGProgressHUDPieIndicatorView.m
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/svn/souying/!svn/ver/41329/%E8%B4%B7%E6%AC%BE%E8%B6%85%E5%B8%82/SRC/ios/branches/develop/Pods/JGProgressHUD/JGProgressHUD/JGProgressHUD/JGProgressHUDPieIndicatorView.m
+END
+JGProgressHUDIndicatorView.m
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/svn/souying/!svn/ver/41329/%E8%B4%B7%E6%AC%BE%E8%B6%85%E5%B8%82/SRC/ios/branches/develop/Pods/JGProgressHUD/JGProgressHUD/JGProgressHUD/JGProgressHUDIndicatorView.m
+END
+JGProgressHUDImageIndicatorView.m
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/svn/souying/!svn/ver/41329/%E8%B4%B7%E6%AC%BE%E8%B6%85%E5%B8%82/SRC/ios/branches/develop/Pods/JGProgressHUD/JGProgressHUD/JGProgressHUD/JGProgressHUDImageIndicatorView.m
+END
+JGProgressHUDAnimation.h
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/svn/souying/!svn/ver/41329/%E8%B4%B7%E6%AC%BE%E8%B6%85%E5%B8%82/SRC/ios/branches/develop/Pods/JGProgressHUD/JGProgressHUD/JGProgressHUD/JGProgressHUDAnimation.h
+END
+JGProgressHUD.h
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/souying/!svn/ver/41329/%E8%B4%B7%E6%AC%BE%E8%B6%85%E5%B8%82/SRC/ios/branches/develop/Pods/JGProgressHUD/JGProgressHUD/JGProgressHUD/JGProgressHUD.h
+END
+JGProgressHUDIndeterminateIndicatorView.h
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/svn/souying/!svn/ver/41329/%E8%B4%B7%E6%AC%BE%E8%B6%85%E5%B8%82/SRC/ios/branches/develop/Pods/JGProgressHUD/JGProgressHUD/JGProgressHUD/JGProgressHUDIndeterminateIndicatorView.h
+END
+JGProgressHUDErrorIndicatorView.h
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/svn/souying/!svn/ver/41329/%E8%B4%B7%E6%AC%BE%E8%B6%85%E5%B8%82/SRC/ios/branches/develop/Pods/JGProgressHUD/JGProgressHUD/JGProgressHUD/JGProgressHUDErrorIndicatorView.h
+END

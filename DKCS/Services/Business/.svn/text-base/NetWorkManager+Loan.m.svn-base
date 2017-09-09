@@ -1,0 +1,26 @@
+//
+//  NetWorkManager+Loan.m
+//  DKCS
+//
+//  Created by __End on 2017/9/6.
+//  Copyright © 2017年 IIIidan Stromrage. All rights reserved.
+//
+
+#import "NetWorkManager+Loan.h"
+
+@implementation NetWorkManager (Loan)
+
+- (RACSignal *)getHomepageDataWithPage:(NSNumber *)page
+{
+    NSString *path = [self combineURL:HomepageDataURL];
+    
+    NSMutableDictionary *params = [NSMutableDictionary dictionaryWithDictionary:@{ @"menuId": @1 }];
+    
+    if (page) {
+        [params setObject:page forKey:@"pageable"];
+    }
+    
+    return [self.sessionManager rac_GET:path parameters:params];
+}
+
+@end

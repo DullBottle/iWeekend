@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/souying/!svn/ver/41329/%E8%B4%B7%E6%AC%BE%E8%B6%85%E5%B8%82/SRC/ios/branches/develop/DKCS/Networking/RACAFNetworking
+END
+RACSubscriber+AFProgressCallbacks.h
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/souying/!svn/ver/41329/%E8%B4%B7%E6%AC%BE%E8%B6%85%E5%B8%82/SRC/ios/branches/develop/DKCS/Networking/RACAFNetworking/RACSubscriber+AFProgressCallbacks.h
+END
+AFHTTPSessionManager+RACSupport.h
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/souying/!svn/ver/41329/%E8%B4%B7%E6%AC%BE%E8%B6%85%E5%B8%82/SRC/ios/branches/develop/DKCS/Networking/RACAFNetworking/AFHTTPSessionManager+RACSupport.h
+END
+RACAFNetworking.h
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/souying/!svn/ver/41329/%E8%B4%B7%E6%AC%BE%E8%B6%85%E5%B8%82/SRC/ios/branches/develop/DKCS/Networking/RACAFNetworking/RACAFNetworking.h
+END
+RACSubscriber+AFProgressCallbacks.m
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/souying/!svn/ver/41329/%E8%B4%B7%E6%AC%BE%E8%B6%85%E5%B8%82/SRC/ios/branches/develop/DKCS/Networking/RACAFNetworking/RACSubscriber+AFProgressCallbacks.m
+END
+AFHTTPSessionManager+RACSupport.m
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/souying/!svn/ver/41329/%E8%B4%B7%E6%AC%BE%E8%B6%85%E5%B8%82/SRC/ios/branches/develop/DKCS/Networking/RACAFNetworking/AFHTTPSessionManager+RACSupport.m
+END

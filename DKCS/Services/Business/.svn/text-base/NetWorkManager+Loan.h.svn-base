@@ -1,0 +1,20 @@
+//
+//  NetWorkManager+Loan.h
+//  DKCS
+//
+//  Created by __End on 2017/9/6.
+//  Copyright © 2017年 IIIidan Stromrage. All rights reserved.
+//
+
+#import "NetWorkManager.h"
+
+NS_ASSUME_NONNULL_BEGIN
+
+@interface NetWorkManager (Loan)
+
+// 首页查询数据（包括轮播图、贷款价格类型、热门贷款item）
+- (RACSignal *)getHomepageDataWithPage:(NSNumber * _Nullable)page;
+
+@end
+
+NS_ASSUME_NONNULL_END

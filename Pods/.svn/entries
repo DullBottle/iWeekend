@@ -1,0 +1,224 @@
+10
+
+dir
+41413
+http://chenjunhan@192.168.0.114:9800/svn/souying/%E8%B4%B7%E6%AC%BE%E8%B6%85%E5%B8%82/SRC/ios/branches/develop/Pods
+http://chenjunhan@192.168.0.114:9800/svn/souying
+
+
+
+2017-09-04T07:57:48.053670Z
+41352
+chenjunhan
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+36c87faa-51d7-11e3-bd87-ad01a314929f
+
+YYModel
+dir
+
+
+
+add
+
+CocoaLumberjack
+dir
+
+
+
+add
+
+IQKeyboardManager
+dir
+
+
+
+add
+
+MJRefresh
+dir
+
+
+
+add
+
+JGProgressHUD
+dir
+
+Masonry
+dir
+
+
+
+add
+
+YNDropDownMenu
+dir
+
+UITextView+Placeholder
+dir
+
+
+
+add
+
+Local Podspecs
+dir
+
+SCLAlertView-Objective-C
+dir
+
+Manifest.lock
+file
+
+
+
+
+2017-09-04T01:48:05.000000Z
+0f55ca13c586ae81d22b7eb10f52373a
+2017-09-04T07:57:48.053670Z
+41352
+chenjunhan
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3398
+
+AFNetworking
+dir
+
+
+
+add
+
+DateTools
+dir
+
+
+
+add
+
+SDCycleScrollView
+dir
+
+
+
+add
+
+ReactiveObjC
+dir
+
+
+
+add
+
+Pods.xcodeproj
+dir
+
+TTTAttributedLabel
+dir
+
+
+
+add
+
+Target Support Files
+dir
+
+
+
+add
+
+PINOperation
+dir
+
+
+
+add
+
+SDWebImage
+dir
+
+
+
+add
+
+ChameleonFramework
+dir
+
+
+
+add
+
+PINCache
+dir
+
+
+
+add
+
+JKCategories
+dir
+
+
+
+add
+
+ManualLayout
+dir
+
+
+
+add
+
+Headers
+dir
+
+
+
+add
+
+FCAlertView
+dir
+
+
+
+add
+
+SVProgressHUD
+dir
+
+
+
+add
+

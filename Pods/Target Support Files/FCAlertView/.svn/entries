@@ -1,0 +1,77 @@
+10
+
+dir
+0
+http://chenjunhan@192.168.0.114:9800/svn/souying/%E8%B4%B7%E6%AC%BE%E8%B6%85%E5%B8%82/SRC/ios/branches/develop/Pods/Target%20Support%20Files/FCAlertView
+http://chenjunhan@192.168.0.114:9800/svn/souying
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+36c87faa-51d7-11e3-bd87-ad01a314929f
+
+FCAlertView-dummy.m
+file
+
+
+
+add
+
+FCAlertView-prefix.pch
+file
+
+
+
+add
+
+FCAlertView-umbrella.h
+file
+
+
+
+add
+
+Info.plist
+file
+
+
+
+add
+
+FCAlertView.xcconfig
+file
+
+
+
+add
+
+FCAlertView.modulemap
+file
+
+
+
+add
+
+ResourceBundle-FCAlertView-Info.plist
+file
+
+
+
+add
+

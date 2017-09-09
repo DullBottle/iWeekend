@@ -1,0 +1,64 @@
+//
+//  LoanService.m
+//  DKCS
+//
+//  Created by __End on 2017/9/6.
+//  Copyright © 2017年 IIIidan Stromrage. All rights reserved.
+//
+
+#import "LoanService.h"
+#import "NetWorkManager+Loan.h"
+#import "Banner.h"
+#import "LoanAmountItem.h"
+#import "LoanItem.h"
+
+@implementation LoanService
+
+- (RACSignal *)homepageData:(NSNumber *)page
+{
+    RACSignal *signal = [self.provider.networkManager getHomepageDataWithPage:page];
+    
+    return [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
+       
+        [[signal catchLocalServerError] subscribeNext:^(id  _Nullable x) {
+            
+            if ([x isKindOfClass:[NSError class]]) {
+                [subscriber sendNext:x];
+                [subscriber sendCompleted];
+                return;
+            }
+            
+            // JSON --> Model.
+            NSDictionary *JSON = (NSDictionary *)x;
+            NSArray *bannerList = [NSArray yy_modelArrayWithClass:[Banner class] json:JSON[@"data"][@"bannerList"]];
+            NSDictionary *dic = [JSON[@"data"][@"itemVoList"] objectAtIndex:0];
+            NSArray *loanAmountList = [NSArray yy_modelArrayWithClass:[LoanAmountItem class] json:dic[@"doubleItemInfo"][@"itemBos"]];
+            dic = [JSON[@"data"][@"itemVoList"] objectAtIndex:1];
+            NSArray *loanList = [NSArray yy_modelArrayWithClass:[LoanItem class] json:dic[@"doubleItemInfo"][@"itemBos"]];
+            
+            [subscriber sendNext:RACTuplePack(bannerList, loanAmountList, loanList)];
+            [subscriber sendCompleted];
+        }];
+        
+        return nil;
+    }];
+}
+
+@end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
