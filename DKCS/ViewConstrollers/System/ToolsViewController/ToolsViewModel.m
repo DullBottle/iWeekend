@@ -12,6 +12,8 @@
 #import "LoanRatesViewModel.h"
 #import "HotQuestionViewModel.h"
 
+#import "LoanCalculator.h"
+
 @implementation ToolsViewModel
 
 - (instancetype)initWithProvider:(id<ServiceProviderType>)provider
@@ -39,7 +41,6 @@
         //
         self.icons = @[ @"贷款计算", @"房贷计算", @"贷款利率", @"问题" ];
         self.items = @[ @"贷款计算", @"房贷计算", @"贷款利率", @"热门问题" ];
-        
     }
     return self;
 }

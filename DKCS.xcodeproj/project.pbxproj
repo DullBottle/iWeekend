@@ -33,6 +33,7 @@
 		0E0A46751F564C370023A912 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E0A46741F564C370023A912 /* AppDelegate.m */; };
 		0E0A46801F564C370023A912 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E0A467E1F564C370023A912 /* LaunchScreen.storyboard */; };
 		0E0A468B1F564C370023A912 /* DKCSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E0A468A1F564C370023A912 /* DKCSTests.m */; };
+		0E87477C1F6524EA00D018A4 /* LoanCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E87477B1F6524EA00D018A4 /* LoanCalculator.m */; };
 		0ECD326C1F5666D6005DC6B1 /* MainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ECD32661F5666D6005DC6B1 /* MainTabBarController.m */; };
 		0ECD326D1F5666D6005DC6B1 /* MainTabBarViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ECD32681F5666D6005DC6B1 /* MainTabBarViewModel.m */; };
 		0ECD32701F5669B6005DC6B1 /* DKDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ECD326F1F5669B6005DC6B1 /* DKDefaults.m */; };
@@ -191,6 +192,8 @@
 		0E0A46861F564C370023A912 /* DKCSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DKCSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E0A468A1F564C370023A912 /* DKCSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKCSTests.m; sourceTree = "<group>"; };
 		0E0A468C1F564C370023A912 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E87477A1F6524EA00D018A4 /* LoanCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoanCalculator.h; sourceTree = "<group>"; };
+		0E87477B1F6524EA00D018A4 /* LoanCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoanCalculator.m; sourceTree = "<group>"; };
 		0ECD32571F5652C1005DC6B1 /* DKPrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKPrefixHeader.pch; sourceTree = "<group>"; };
 		0ECD32651F5666D6005DC6B1 /* MainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBarController.h; sourceTree = "<group>"; };
 		0ECD32661F5666D6005DC6B1 /* MainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarController.m; sourceTree = "<group>"; };
@@ -545,6 +548,8 @@
 				0E02E26B1F565171003CBD6F /* BaseService.m */,
 				0E02E26C1F565171003CBD6F /* ServiceProvider.h */,
 				0E02E26D1F565171003CBD6F /* ServiceProvider.m */,
+				0E87477A1F6524EA00D018A4 /* LoanCalculator.h */,
+				0E87477B1F6524EA00D018A4 /* LoanCalculator.m */,
 				5A36B9B91F57F8CD00CBBA95 /* Business */,
 				5A36B9BA1F57F8CD00CBBA95 /* System */,
 			);
@@ -1370,6 +1375,7 @@
 				5AD1E29A1F59052400B4E012 /* HomepageHeaderView.m in Sources */,
 				5A0868C01F5FD43100428ED2 /* LoanService.m in Sources */,
 				5AB369391F616CBF0015F82B /* ProvidentFundOutputView.m in Sources */,
+				0E87477C1F6524EA00D018A4 /* LoanCalculator.m in Sources */,
 				5A28A7541F60E865003A7B40 /* TabIndicatorView.m in Sources */,
 				5AB3691D1F614DAF0015F82B /* FixedBasisResultView.m in Sources */,
 				5A582B411F5D57B500A7BC7B /* LoginView.m in Sources */,
