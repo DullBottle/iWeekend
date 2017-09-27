@@ -1,2 +1,0 @@
-# iWeekend
-Work in weekend.
