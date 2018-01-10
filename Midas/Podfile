@@ -15,6 +15,9 @@ target 'Midas' do
   
   # Model
   
+  # UI.
+  pod 'SnapKit', '~> 4.0.0'
+  
   # Rx
   pod 'RxSwift', '~> 4.0.0'
   pod 'RxOptional', '~> 3.3.0'
