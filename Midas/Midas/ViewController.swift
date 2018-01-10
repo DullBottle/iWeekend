@@ -7,26 +7,41 @@
 //
 
 import UIKit
+//import PINRemoteImage
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var imageView: INSImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+ 
+        let urlString = "https://scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/25007863_145284662859895_8347086068658470912_n.jpg"
+        imageView.setImage(urlString) { error in
+            print(error.localizedDescription)
+        }
         
-        Networking.shared.request("https://www.instagram.com/p/BdOBwNTnW0h/", completionClosure: { JSON in
-            if let JSON = JSON {
-                print(JSON)
-            }
-        })
-        
+//        _ = Networking.shared.request("https://www.instagram.com/p/BdrzrHUAgVQ/")
+//            .filterNil()
+//            .map(Ins.self)
+//            .subscribe(onNext: { ins in
+//                print(ins)
+//            })
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 

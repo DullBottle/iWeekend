@@ -9,6 +9,16 @@
 import UIKit
 import CoreData
 
+// Rx
+import RxCocoa
+import RxOptional
+
+// UI
+import PINRemoteImage
+
+// Misc
+import SwiftyColor
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -20,6 +30,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        PINRemoteImageManager.shared().cache.removeAllObjects()
+        PINRemoteImageManager.shared().setProgressiveRendersMaxProgressiveRenderSize(CGSize(width: 2048, height: 2048), completion: nil)
+        
         return true
     }
 

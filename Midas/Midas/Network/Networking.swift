@@ -2,11 +2,11 @@
 //  Networking.swift
 //  Midas
 //
-//  Created by 銀色魔頭號 on 2017/12/26.
+//  Created by __End on 2017/12/26.
 //  Copyright © 2017年 Dressrose. All rights reserved.
 //
 
-import Foundation
+import RxSwift
 import Alamofire
 import SwiftyJSON
 
@@ -24,33 +24,42 @@ final class Networking {
         
     }
     
-    func request(_ urlString: String, completionClosure:@escaping CompletionClosure, errClosure:ErrorClosure? = nil) -> Void {
+    func request(_ urlString: String) -> Observable<[String: Any]?> {
         
-        // set the `urlString`.
-        self.urlString = urlString
-        
-        // perform the request.
-        Alamofire.request(urlString).response { response in
+        return Observable.create { subscribe in
+            // set the `urlString`.
+            self.urlString = urlString
             
-            if let err = response.error {
-                // Error handler.
-                if let errClosure = errClosure {
+            // perform the request.
+            Alamofire.request(urlString).response { response in
+                
+                if let err = response.error {
+                    // Error handler.
                     print("[\(String(describing: response.response?.statusCode))] - \(err.localizedDescription)")
-                    errClosure(err)
-                }
-            } else {
-                // Data handler.
-                if let data = response.data {
-                    let HTML = String.init(data: data, encoding: String.Encoding.utf8)!
-                    if let JSON = Parser.parse(HTML) {
-                        completionClosure(JSON)
-                        return
-                    }
-                    completionClosure(nil)
+                    subscribe.onError(err)
                 } else {
-                    // data is `nil`.
-                    completionClosure(nil)
+                    // Data handler.
+                    if let data = response.data {
+                        let HTML = String.init(data: data, encoding: String.Encoding.utf8)!
+                        if let rawJSON = Parser.parse(HTML) {
+                            let JSON = rawJSON["entry_data"]["PostPage"].array?.first?["graphql"]["shortcode_media"]
+                            let reorganizeJSON = self.reorganizeJsonData(JSON)
+                            subscribe.onNext(reorganizeJSON)
+                            subscribe.onCompleted()
+                            return
+                        }
+                        subscribe.onNext(nil)
+                        subscribe.onCompleted()
+                    } else {
+                        // data is `nil`.
+                        subscribe.onNext(nil)
+                        subscribe.onCompleted()
+                    }
                 }
+            }
+            
+            return Disposables.create {
+                self.cancel()
             }
         }
     }
@@ -58,7 +67,7 @@ final class Networking {
     //
     // Cancel the Task.
     //
-    func cancel() -> Void {
+    fileprivate func cancel() -> Void {
         
         let sessionManager = Alamofire.SessionManager.default
         sessionManager.session.getTasksWithCompletionHandler { dataTasks, _, _ in
@@ -72,6 +81,45 @@ final class Networking {
         }
     }
     
+    /// Reorganization a new `[String:Any]` dictionary.
+    fileprivate func reorganizeJsonData(_ oldValue: JSON?) -> [String : Any] {
+ 
+//        {
+//            "id" : ...
+//            "username" : ...
+//            "profile_pic_url" : ...
+//            "tweets" : ...
+//            "is_video": ...
+//            "dimensions": ...
+//            "video_url": ...
+//            "image_urls": ...
+//        }
+
+        guard let oldValue = oldValue else { return [:] }
+        
+        var newValue: [String : Any] = [:]
+        newValue["id"] = oldValue["id"].stringValue
+        newValue["username"] = oldValue["owner"]["full_name"].stringValue
+        newValue["profile_pic_url"] = oldValue["owner"]["profile_pic_url"].stringValue
+        newValue["tweets"] = oldValue["edge_media_to_caption"]["edges"].array?.first?["node"]["text"].stringValue ?? ""
+        let is_video = oldValue["is_video"].boolValue
+        newValue["is_video"] = is_video
+        newValue["video_url"] = is_video ? oldValue["video_url"].stringValue : ""
+        var images: [String] = []
+        if !is_video {
+            if let edges = oldValue["edge_sidecar_to_children"]["edges"].array {
+                
+                for tmp in edges {
+                    images.append(tmp["node"]["display_url"].stringValue)
+                }
+            }
+        }
+        newValue["image_urls"] = images
+        let dimensions: [String: Int] = [ "width": oldValue["dimensions"]["width"].intValue,
+                                          "height": oldValue["dimensions"]["height"].intValue ]
+        newValue["dimensions"] = dimensions
+        return newValue
+    }
     
 }
 

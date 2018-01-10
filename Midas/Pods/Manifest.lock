@@ -1,21 +1,70 @@
 PODS:
   - Alamofire (4.4.0)
+  - FLAnimatedImage (1.0.12)
+  - Moya (10.0.1):
+    - Moya/Core (= 10.0.1)
+  - Moya/Core (10.0.1):
+    - Alamofire (~> 4.1)
+    - Result (~> 3.0)
+  - Moya/RxSwift (10.0.1):
+    - Moya/Core
+    - RxSwift (~> 4.0)
+  - PINCache (3.0.1-beta.6):
+    - PINCache/Arc-exception-safe (= 3.0.1-beta.6)
+    - PINCache/Core (= 3.0.1-beta.6)
+  - PINCache/Arc-exception-safe (3.0.1-beta.6):
+    - PINCache/Core
+  - PINCache/Core (3.0.1-beta.6):
+    - PINOperation (~> 1.1.0)
+  - PINOperation (1.1)
+  - PINRemoteImage (3.0.0-beta.13):
+    - PINRemoteImage/FLAnimatedImage (= 3.0.0-beta.13)
+    - PINRemoteImage/PINCache (= 3.0.0-beta.13)
+  - PINRemoteImage/Core (3.0.0-beta.13):
+    - PINOperation
+  - PINRemoteImage/FLAnimatedImage (3.0.0-beta.13):
+    - FLAnimatedImage (>= 1.0)
+    - PINRemoteImage/Core
+  - PINRemoteImage/PINCache (3.0.0-beta.13):
+    - PINCache (= 3.0.1-beta.6)
+    - PINRemoteImage/Core
+  - Result (3.2.4)
+  - RxCocoa (4.1.0):
+    - RxSwift (~> 4.0)
+  - RxOptional (3.3.0):
+    - RxCocoa (~> 4.0)
+    - RxSwift (~> 4.0)
   - RxSwift (4.0.0)
   - SwiftSoup (1.5.8)
+  - SwiftyColor (1.0.0)
   - SwiftyJSON (4.0.0)
 
 DEPENDENCIES:
   - Alamofire (~> 4.4.0)
+  - Moya (~> 10.0.0-beta.1)
+  - Moya/RxSwift
+  - PINRemoteImage (~> 3.0.0-beta.13)
+  - RxOptional (~> 3.3.0)
   - RxSwift (~> 4.0.0)
   - SwiftSoup (~> 1.5.8)
+  - SwiftyColor (~> 1.0.0)
   - SwiftyJSON (~> 4.0.0)
 
 SPEC CHECKSUMS:
   Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
+  Moya: 9e621707ff754eeb51ff3ec51a3d54e517c0733a
+  PINCache: d195fdba255283f7e9900a55e3cced377f431f9b
+  PINOperation: 7f042fa6df5b606deb4bd5997654cf7033d5be1d
+  PINRemoteImage: d6d51c5d2adda55f1ce30c96e850b6c4ebd2856a
+  Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
+  RxCocoa: cc1fec49cdc8fabe645964de7c51c099a36c2aa8
+  RxOptional: e5448d3e21024489e07c31f6a262f2b50c975367
   RxSwift: fd680d75283beb5e2559486f3c0ff852f0d35334
   SwiftSoup: 86a1f5ad07b7e3d14ab1a9324a58c75ae2215e79
+  SwiftyColor: 7fa09db14051bc5d7f539e1c4576665975225992
   SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
 
-PODFILE CHECKSUM: a325ac37bdb05fd17792bc37ff4c418fc3726714
+PODFILE CHECKSUM: b8826cd41a3be59e11d4fd0ac58680a008f788d9
 
 COCOAPODS: 1.3.1
