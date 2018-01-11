@@ -108,6 +108,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/PINCache/PINCache.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/PINOperation/PINOperation.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/PINRemoteImage/PINRemoteImage.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/ReactorKit/ReactorKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Result/Result.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RxOptional/RxOptional.framework"
@@ -115,6 +116,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SwiftSoup/SwiftSoup.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SwiftyColor/SwiftyColor.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SwiftyImage/SwiftyImage.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
@@ -124,6 +126,7 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/PINCache/PINCache.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/PINOperation/PINOperation.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/PINRemoteImage/PINRemoteImage.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/ReactorKit/ReactorKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Result/Result.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RxOptional/RxOptional.framework"
@@ -131,6 +134,7 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SwiftSoup/SwiftSoup.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SwiftyColor/SwiftyColor.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SwiftyImage/SwiftyImage.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then

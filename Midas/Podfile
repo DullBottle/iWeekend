@@ -6,6 +6,9 @@ target 'Midas' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
 
+  # Architecture
+  pod 'ReactorKit'
+
   # Networking
   pod 'Alamofire', '~> 4.4.0'
   pod 'Moya', '~> 10.0.0-beta.1'
@@ -26,6 +29,7 @@ target 'Midas' do
   pod 'SwiftSoup', '~> 1.5.8'
   pod 'SwiftyJSON', '~> 4.0.0'
   pod 'SwiftyColor', '~> 1.0.0'
+  pod 'SwiftyImage', '~> 1.2.0'
 
   target 'MidasTests' do
     inherit! :search_paths

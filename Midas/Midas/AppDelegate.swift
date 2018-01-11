@@ -15,24 +15,37 @@ import RxOptional
 
 // UI
 import PINRemoteImage
+import SnapKit
 
 // Misc
 import SwiftyColor
+import SwiftyImage
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    // MARK: Properties.
+    
     var window: UIWindow?
 
     static var shared: AppDelegate {
         return UIApplication.shared.delegate as! AppDelegate
     }
 
+    // MARK: App Life.
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.backgroundColor = .white
+        window?.makeKeyAndVisible()
+
+        // Base Configure.
+        configure()
         
-        PINRemoteImageManager.shared().cache.removeAllObjects()
-        PINRemoteImageManager.shared().setProgressiveRendersMaxProgressiveRenderSize(CGSize(width: 2048, height: 2048), completion: nil)
+        // Set RootViewController.
+        let rootNavigationController = INSNavigationController.init(rootViewController: INSViewController())
+        window?.rootViewController = rootNavigationController
         
         return true
     }
@@ -61,6 +74,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.saveContext()
     }
 
+    // MARK: private methods
+    
+    private func configure() {
+        configurePINRemoteImage()
+        configureAppearance()
+    }
+    
+    private func configurePINRemoteImage() {
+        PINRemoteImageManager.shared().cache.removeAllObjects()
+        PINRemoteImageManager.shared().setProgressiveRendersMaxProgressiveRenderSize(CGSize(width: 2048, height: 2048), completion: nil)
+    }
+    
+    func configureAppearance() {
+        let navigationBarBackgroundImage = UIImage.resizable().color(0xFBFBFB.color).image
+        UINavigationBar.appearance().setBackgroundImage(navigationBarBackgroundImage, for: .default)
+        UINavigationBar.appearance().shadowImage = UIImage()
+        UINavigationBar.appearance().barStyle = .black
+        UIApplication.shared.statusBarStyle = .default
+    }
+    
     // MARK: - Core Data stack
 
     lazy var persistentContainer: NSPersistentContainer = {

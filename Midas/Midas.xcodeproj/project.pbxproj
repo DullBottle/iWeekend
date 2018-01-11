@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		0E7037CA1FF1EFB90082FF5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7037C91FF1EFB90082FF5A /* AppDelegate.swift */; };
 		0E7037CC1FF1EFB90082FF5A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7037CB1FF1EFB90082FF5A /* ViewController.swift */; };
-		0E7037CF1FF1EFB90082FF5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E7037CD1FF1EFB90082FF5A /* Main.storyboard */; };
 		0E7037D21FF1EFB90082FF5A /* Midas.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0E7037D01FF1EFB90082FF5A /* Midas.xcdatamodeld */; };
 		0E7037D41FF1EFB90082FF5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E7037D31FF1EFB90082FF5A /* Assets.xcassets */; };
 		0E7037D71FF1EFB90082FF5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E7037D51FF1EFB90082FF5A /* LaunchScreen.storyboard */; };
@@ -20,11 +19,19 @@
 		31F43D1EEF253B38E605ABB2 /* Pods_Midas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EC444E0B6DB6FA405BDCDDA /* Pods_Midas.framework */; };
 		5A0128AF2004C80E00793069 /* INSImageView + Pin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0128AD2004C80E00793069 /* INSImageView + Pin.swift */; };
 		5A0128B02004C80E00793069 /* INSImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0128AE2004C80E00793069 /* INSImageView.swift */; };
+		5A4E6F2620070BDE00D021D2 /* INSNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4E6F2520070BDE00D021D2 /* INSNavigationController.swift */; };
+		5A4E6F2820070FEB00D021D2 /* INSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4E6F2720070FEB00D021D2 /* INSViewController.swift */; };
+		5A4E6F2B2007163700D021D2 /* InsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4E6F2A2007163700D021D2 /* InsService.swift */; };
+		5A4E6F2F2007169900D021D2 /* InsViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4E6F2E2007169900D021D2 /* InsViewReactor.swift */; };
+		5A4E6F31200746C100D021D2 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4E6F30200746C100D021D2 /* BaseViewController.swift */; };
 		5A7D526E20031FAC006408F8 /* CodableType + Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7D526D20031FAC006408F8 /* CodableType + Rx.swift */; };
 		5AA335291FFF6620007E15C8 /* CodableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA335281FFF6620007E15C8 /* CodableType.swift */; };
 		5ADF8F6E2005B2CD003072DC /* InsImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADF8F6D2005B2CD003072DC /* InsImageManager.swift */; };
 		5ADF8F722005B3BE003072DC /* SafeAsync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADF8F712005B3BE003072DC /* SafeAsync.swift */; };
 		5ADF8F742005B6E2003072DC /* CGFloatLiteral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADF8F732005B6E2003072DC /* CGFloatLiteral.swift */; };
+		5ADF8F762005C6FE003072DC /* INSPageableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADF8F752005C6FE003072DC /* INSPageableView.swift */; };
+		5ADF8F78200606FB003072DC /* INSPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADF8F77200606FB003072DC /* INSPageControl.swift */; };
+		5ADF8F7A20060B2F003072DC /* UIColor + Ins.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADF8F7920060B2F003072DC /* UIColor + Ins.swift */; };
 		BD81B490723DF737CE295022 /* Pods_MidasTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F8A538538232F5680A9DD01 /* Pods_MidasTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,7 +49,6 @@
 		0E7037C61FF1EFB90082FF5A /* Midas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Midas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E7037C91FF1EFB90082FF5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E7037CB1FF1EFB90082FF5A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0E7037CE1FF1EFB90082FF5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0E7037D11FF1EFB90082FF5A /* Midas.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Midas.xcdatamodel; sourceTree = "<group>"; };
 		0E7037D31FF1EFB90082FF5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E7037D61FF1EFB90082FF5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -59,11 +65,19 @@
 		22904353529C3F29BD54E144 /* Pods-MidasTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MidasTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MidasTests/Pods-MidasTests.release.xcconfig"; sourceTree = "<group>"; };
 		5A0128AD2004C80E00793069 /* INSImageView + Pin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "INSImageView + Pin.swift"; sourceTree = "<group>"; };
 		5A0128AE2004C80E00793069 /* INSImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = INSImageView.swift; sourceTree = "<group>"; };
+		5A4E6F2520070BDE00D021D2 /* INSNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = INSNavigationController.swift; sourceTree = "<group>"; };
+		5A4E6F2720070FEB00D021D2 /* INSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = INSViewController.swift; sourceTree = "<group>"; };
+		5A4E6F2A2007163700D021D2 /* InsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InsService.swift; path = Midas/ViewControllers/InsService.swift; sourceTree = SOURCE_ROOT; };
+		5A4E6F2E2007169900D021D2 /* InsViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsViewReactor.swift; sourceTree = "<group>"; };
+		5A4E6F30200746C100D021D2 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		5A7D526D20031FAC006408F8 /* CodableType + Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CodableType + Rx.swift"; sourceTree = "<group>"; };
 		5AA335281FFF6620007E15C8 /* CodableType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableType.swift; sourceTree = "<group>"; };
 		5ADF8F6D2005B2CD003072DC /* InsImageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsImageManager.swift; sourceTree = "<group>"; };
 		5ADF8F712005B3BE003072DC /* SafeAsync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeAsync.swift; sourceTree = "<group>"; };
 		5ADF8F732005B6E2003072DC /* CGFloatLiteral.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGFloatLiteral.swift; sourceTree = "<group>"; };
+		5ADF8F752005C6FE003072DC /* INSPageableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = INSPageableView.swift; sourceTree = "<group>"; };
+		5ADF8F77200606FB003072DC /* INSPageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = INSPageControl.swift; sourceTree = "<group>"; };
+		5ADF8F7920060B2F003072DC /* UIColor + Ins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + Ins.swift"; sourceTree = "<group>"; };
 		AC27DA7A22727AABA4739639 /* Pods-Midas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Midas.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Midas/Pods-Midas.debug.xcconfig"; sourceTree = "<group>"; };
 		B738970F84D76AB28D3AF162 /* Pods-MidasTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MidasTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MidasTests/Pods-MidasTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -112,14 +126,12 @@
 			isa = PBXGroup;
 			children = (
 				0E7037C91FF1EFB90082FF5A /* AppDelegate.swift */,
-				0E7037CB1FF1EFB90082FF5A /* ViewController.swift */,
-				0E7037CD1FF1EFB90082FF5A /* Main.storyboard */,
 				5ADF8F6F2005B363003072DC /* App */,
 				0E7037ED1FF1F3F30082FF5A /* Network */,
-				5A5674491FFDC12200181D3B /* Services */,
+				5A4E6F292007161500D021D2 /* Services */,
 				5ADF8F6C2005B2CD003072DC /* Manager */,
 				0E7037EE1FF1F3F30082FF5A /* Model */,
-				5A56744C1FFDC12300181D3B /* ViewController */,
+				5A4E6F2420070B6E00D021D2 /* ViewControllers */,
 				5A0128AC2004C80E00793069 /* Views */,
 				5A7D526C20031F8F006408F8 /* Rx */,
 				0E7037EC1FF1F3F30082FF5A /* Util */,
@@ -144,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				0E7037F51FF23A950082FF5A /* Parser.swift */,
+				5ADF8F7920060B2F003072DC /* UIColor + Ins.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -168,24 +181,32 @@
 		5A0128AC2004C80E00793069 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				5ADF8F752005C6FE003072DC /* INSPageableView.swift */,
+				5ADF8F77200606FB003072DC /* INSPageControl.swift */,
 				5A0128AE2004C80E00793069 /* INSImageView.swift */,
 				5A0128AD2004C80E00793069 /* INSImageView + Pin.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		5A5674491FFDC12200181D3B /* Services */ = {
+		5A4E6F2420070B6E00D021D2 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				5A4E6F30200746C100D021D2 /* BaseViewController.swift */,
+				0E7037CB1FF1EFB90082FF5A /* ViewController.swift */,
+				5A4E6F2520070BDE00D021D2 /* INSNavigationController.swift */,
+				5A4E6F2E2007169900D021D2 /* InsViewReactor.swift */,
+				5A4E6F2720070FEB00D021D2 /* INSViewController.swift */,
 			);
-			path = Services;
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
-		5A56744C1FFDC12300181D3B /* ViewController */ = {
+		5A4E6F292007161500D021D2 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				5A4E6F2A2007163700D021D2 /* InsService.swift */,
 			);
-			path = ViewController;
+			path = Services;
 			sourceTree = "<group>";
 		};
 		5A7D526C20031F8F006408F8 /* Rx */ = {
@@ -332,7 +353,6 @@
 			files = (
 				0E7037D71FF1EFB90082FF5A /* LaunchScreen.storyboard in Resources */,
 				0E7037D41FF1EFB90082FF5A /* Assets.xcassets in Resources */,
-				0E7037CF1FF1EFB90082FF5A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +427,7 @@
 				"${BUILT_PRODUCTS_DIR}/PINCache/PINCache.framework",
 				"${BUILT_PRODUCTS_DIR}/PINOperation/PINOperation.framework",
 				"${BUILT_PRODUCTS_DIR}/PINRemoteImage/PINRemoteImage.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactorKit/ReactorKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxOptional/RxOptional.framework",
@@ -414,6 +435,7 @@
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftSoup/SwiftSoup.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyColor/SwiftyColor.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyImage/SwiftyImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -424,6 +446,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINCache.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINOperation.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINRemoteImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactorKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxOptional.framework",
@@ -431,6 +454,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftSoup.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyColor.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -478,8 +502,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A4E6F2F2007169900D021D2 /* InsViewReactor.swift in Sources */,
+				5ADF8F7A20060B2F003072DC /* UIColor + Ins.swift in Sources */,
 				5ADF8F6E2005B2CD003072DC /* InsImageManager.swift in Sources */,
 				0E77F9421FF38BB70067DC9B /* Ins.swift in Sources */,
+				5A4E6F2820070FEB00D021D2 /* INSViewController.swift in Sources */,
+				5A4E6F31200746C100D021D2 /* BaseViewController.swift in Sources */,
 				5A0128AF2004C80E00793069 /* INSImageView + Pin.swift in Sources */,
 				5ADF8F722005B3BE003072DC /* SafeAsync.swift in Sources */,
 				0E7037CC1FF1EFB90082FF5A /* ViewController.swift in Sources */,
@@ -488,9 +516,13 @@
 				5A0128B02004C80E00793069 /* INSImageView.swift in Sources */,
 				0E7037D21FF1EFB90082FF5A /* Midas.xcdatamodeld in Sources */,
 				0E7037CA1FF1EFB90082FF5A /* AppDelegate.swift in Sources */,
+				5ADF8F762005C6FE003072DC /* INSPageableView.swift in Sources */,
 				5ADF8F742005B6E2003072DC /* CGFloatLiteral.swift in Sources */,
 				0E7037F41FF1F4480082FF5A /* Networking.swift in Sources */,
+				5A4E6F2620070BDE00D021D2 /* INSNavigationController.swift in Sources */,
+				5ADF8F78200606FB003072DC /* INSPageControl.swift in Sources */,
 				0E7037F61FF23A950082FF5A /* Parser.swift in Sources */,
+				5A4E6F2B2007163700D021D2 /* InsService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -513,14 +545,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		0E7037CD1FF1EFB90082FF5A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0E7037CE1FF1EFB90082FF5A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0E7037D51FF1EFB90082FF5A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

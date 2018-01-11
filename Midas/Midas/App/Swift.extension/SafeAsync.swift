@@ -17,4 +17,11 @@ extension DispatchQueue {
             async { closure() }
         }
     }
+    
+    static func after(_ delay: TimeInterval, closure: @escaping () -> ()) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + delay, execute: {
+            closure()
+        })
+    }
+    
 }
