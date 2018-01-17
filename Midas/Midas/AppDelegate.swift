@@ -12,12 +12,15 @@ import CoreData
 // Rx
 import RxCocoa
 import RxOptional
+import RxViewController
 
 // UI
 import PINRemoteImage
 import SnapKit
+import ManualLayout
 
 // Misc
+import Then
 import SwiftyColor
 import SwiftyImage
 
@@ -44,7 +47,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         configure()
         
         // Set RootViewController.
-        let rootNavigationController = INSNavigationController.init(rootViewController: INSViewController())
+        let service = InsService()
+        let reactor = InsViewReactor(service: service)
+        let rootNavigationController = INSNavigationController.init(rootViewController: INSViewController(reactor: reactor))
         window?.rootViewController = rootNavigationController
         
         return true

@@ -16,15 +16,12 @@ class INSPageableView: UIView {
     
     var page: Int = 0 {
         willSet {
-            let size = scrollView.frame.size
-            for i in 0..<newValue {
+            for _ in 0..<newValue {
                 let node = INSImageView()
-                node.frame = CGRect(x: CGFloat(i) * size.width , y: 0, width: size.width, height: size.height)
+//                node.frame = CGRect(x: CGFloat(i) * size.width , y: 0, width: size.width, height: size.height)
                 scrollView.addSubview(node)
                 pages.append(node)
             }
-            // set `contentSize`
-            scrollView.contentSize =  CGSize(width: (CGFloat(newValue) * size.width), height: size.height)
         }
     }
     
@@ -56,7 +53,26 @@ class INSPageableView: UIView {
     required convenience init?(coder aDecoder: NSCoder) {
         self.init(frame: .zero)
     }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        if let frame = scrollView.superview?.bounds {
+            scrollView.frame = frame
+            for i in 0..<page {
+                let node = pages[i]
+                node.frame = CGRect(x: CGFloat(i) * size.width , y: 0, width: size.width, height: size.height)
+            }
+            // set `contentSize`
+            scrollView.contentSize =  CGSize(width: (CGFloat(page) * size.width), height: size.height)
+        }
+    }
 }
+
+
+
+
+
 
 
 

@@ -40,7 +40,7 @@ class InsViewReactor: Reactor {
             guard !self.currentState.isRefreshing else { return Observable.empty() }
             let startRefreshing = Observable<Mutation>.just(.setRefreshing(true))
             let endRefreshing = Observable<Mutation>.just(.setRefreshing(false))
-            let setNode = self.insService.instagram("").asObservable().map { ins -> Mutation in
+            let setNode = self.insService.instagram("https://www.instagram.com/p/BeABY_TlPyY/").asObservable().map { ins -> Mutation in
                 return .setNode([ins])
             }
             return .concat([startRefreshing, setNode, endRefreshing])

@@ -99,7 +99,7 @@ final class Networking {
         
         var newValue: [String : Any] = [:]
         newValue["id"] = oldValue["id"].stringValue
-        newValue["username"] = oldValue["owner"]["full_name"].stringValue
+        newValue["username"] = oldValue["owner"]["username"].stringValue
         newValue["profile_pic_url"] = oldValue["owner"]["profile_pic_url"].stringValue
         newValue["tweets"] = oldValue["edge_media_to_caption"]["edges"].array?.first?["node"]["text"].stringValue ?? ""
         let is_video = oldValue["is_video"].boolValue

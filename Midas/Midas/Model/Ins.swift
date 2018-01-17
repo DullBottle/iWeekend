@@ -36,8 +36,8 @@ struct Ins: CodableType {
 
 struct Size: CodableType {
     
-    var width: Int
-    var height: Int
+    var width: CGFloat
+    var height: CGFloat
     
     enum CodingKeys: String, CodingKey {
         case width

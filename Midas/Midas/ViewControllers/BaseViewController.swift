@@ -58,8 +58,7 @@ class BaseViewController: UIViewController {
     // fix iOS 11 scroll view bug
     if #available(iOS 11, *) {
       if let scrollView = self.view.subviews.first as? UIScrollView {
-        self.scrollViewOriginalContentInsetAdjustmentBehaviorRawValue =
-          scrollView.contentInsetAdjustmentBehavior.rawValue
+        self.scrollViewOriginalContentInsetAdjustmentBehaviorRawValue = scrollView.contentInsetAdjustmentBehavior.rawValue
         scrollView.contentInsetAdjustmentBehavior = .never
       }
     }

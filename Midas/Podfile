@@ -20,12 +20,16 @@ target 'Midas' do
   
   # UI.
   pod 'SnapKit', '~> 4.0.0'
+  pod 'ReusableKit', '~> 2.0.1'
+  pod 'ManualLayout'
   
   # Rx
   pod 'RxSwift', '~> 4.0.0'
   pod 'RxOptional', '~> 3.3.0'
+  pod 'RxViewController'
   
   # Misc
+  pod 'Then', '~> 2.3.0'
   pod 'SwiftSoup', '~> 1.5.8'
   pod 'SwiftyJSON', '~> 4.0.0'
   pod 'SwiftyColor', '~> 1.0.0'
