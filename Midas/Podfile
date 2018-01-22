@@ -22,6 +22,7 @@ target 'Midas' do
   pod 'SnapKit', '~> 4.0.0'
   pod 'ReusableKit', '~> 2.0.1'
   pod 'ManualLayout'
+  pod 'TTTAttributedLabel', '~> 2.0.0'
   
   # Rx
   pod 'RxSwift', '~> 4.0.0'
