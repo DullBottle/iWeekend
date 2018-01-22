@@ -34,6 +34,12 @@ struct Ins: CodableType {
     }
 }
 
+extension Ins: Equatable {
+    static func == (lhs: Ins, rhs: Ins) -> Bool {
+        return lhs.id == rhs.id
+    }
+}
+
 struct Size: CodableType {
     
     var width: CGFloat

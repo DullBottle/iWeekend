@@ -12,9 +12,9 @@ class INSImageView: UIImageView {
     
     typealias INSErrorClosure = (Error) -> Void
     
-    fileprivate let baseProgressBar: CAShapeLayer = CAShapeLayer()
+    let baseProgressBar: CAShapeLayer = CAShapeLayer()
     
-    fileprivate let progressBar: CAShapeLayer = CAShapeLayer()
+    let progressBar: CAShapeLayer = CAShapeLayer()
     
     // MARK: Constraints
     
@@ -33,6 +33,7 @@ class INSImageView: UIImageView {
         
         backgroundColor = 0xEFEFEE.color
         
+        baseProgressBar.isHidden = true
         baseProgressBar.lineWidth = Metric.lineWidth
         baseProgressBar.lineCap = kCALineCapRound
         baseProgressBar.strokeColor = 0xD8D8D8.color.cgColor

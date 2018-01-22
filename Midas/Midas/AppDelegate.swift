@@ -87,7 +87,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     private func configurePINRemoteImage() {
-        PINRemoteImageManager.shared().cache.removeAllObjects()
+//        PINRemoteImageManager.shared().cache.removeAllObjects()
         PINRemoteImageManager.shared().setProgressiveRendersMaxProgressiveRenderSize(CGSize(width: 2048, height: 2048), completion: nil)
     }
     

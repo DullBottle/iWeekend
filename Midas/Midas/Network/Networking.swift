@@ -108,10 +108,13 @@ final class Networking {
         var images: [String] = []
         if !is_video {
             if let edges = oldValue["edge_sidecar_to_children"]["edges"].array {
-                
+                // 多张图片
                 for tmp in edges {
                     images.append(tmp["node"]["display_url"].stringValue)
                 }
+            } else {
+                // 只有一张图片
+                images.append(oldValue["display_url"].stringValue)
             }
         }
         newValue["image_urls"] = images

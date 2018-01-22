@@ -20,6 +20,9 @@ extension INSImageView {
                 progressImage: { [weak self] result in
                     if progressive {
                         DispatchQueue.main.safeAsync {
+                            if (self?.baseProgressBar.isHidden)! {
+                                self?.baseProgressBar.isHidden = false
+                            }
                             self?.image = result.image
                         }
                     }

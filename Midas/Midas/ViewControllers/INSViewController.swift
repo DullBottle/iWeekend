@@ -14,7 +14,14 @@ class INSViewController: BaseViewController, View {
     
     // MARK: Properties.
     
-    fileprivate var data: [Ins] = [Ins]()           // the data source array.
+    fileprivate var data: [Ins] = [Ins]() {          // the data source array.
+        didSet {
+            for ins in oldValue {
+                let reactor = INSCellReactor(ins)
+                reactors.insert(reactor, at: oldValue.index(of: ins)!)
+            }
+        }
+    }
     
     fileprivate var reactors: [INSCellReactor] = [INSCellReactor]()           // the reactor array.
     
@@ -42,7 +49,6 @@ class INSViewController: BaseViewController, View {
     init(reactor: InsViewReactor) {
         defer { self.reactor = reactor }
         super.init()
-        view.addSubview(collectionView)
         collectionView.refreshControl = refreshControl
     }
     
@@ -106,10 +112,7 @@ extension INSViewController: UICollectionViewDelegate, UICollectionViewDataSourc
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeue(Reusable.insCell, for: indexPath)
-        let ins = self.data[indexPath.item]
-        let reactor = INSCellReactor(ins)
-        reactors.insert(reactor, at: indexPath.item)
-        cell.reactor = reactor
+        cell.reactor = reactors[indexPath.item]
         return cell
     }
 }
@@ -143,7 +146,8 @@ extension INSViewController: UICollectionViewDelegateFlowLayout {
                         layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAt indexPath: IndexPath) -> CGSize
     {
-        return Reusable.insCell.class.size(width: collectionView.width)
+        let reactor = reactors[indexPath.item]
+        return Reusable.insCell.class.size(width: collectionView.width, reactor: reactor)
     }
     
     func collectionView(_ collectionView: UICollectionView,

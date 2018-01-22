@@ -12,7 +12,12 @@ class INSPageableView: UIView {
     
     // MARK: Properties.
     
-    fileprivate let scrollView = UIScrollView()
+    let scrollView = UIScrollView().then {
+        $0.backgroundColor = .ins_lightGray
+        $0.isPagingEnabled = true
+        $0.showsVerticalScrollIndicator = false
+        $0.showsHorizontalScrollIndicator = false
+    }
     
     var page: Int = 0 {
         willSet {
@@ -43,10 +48,6 @@ class INSPageableView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        scrollView.isPagingEnabled = true
-        scrollView.showsVerticalScrollIndicator = false
-        scrollView.showsHorizontalScrollIndicator = false
-        scrollView.frame = frame
         addSubview(scrollView)
     }
     
