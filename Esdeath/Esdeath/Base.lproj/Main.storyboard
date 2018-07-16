@@ -38,27 +38,60 @@
                                     <constraint firstAttribute="width" constant="30" id="lp3-l7-C1r"/>
                                 </constraints>
                                 <state key="normal" title="tap"/>
-                                <connections>
-                                    <action selector="tap:" destination="9pv-A4-QxB" eventType="touchUpInside" id="IZN-JT-qpm"/>
-                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ylI-rP-Khv">
+                                <rect key="frame" x="158" y="388" width="58" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="58" id="Q7S-gt-d6g"/>
+                                    <constraint firstAttribute="height" constant="30" id="vnn-jJ-lmP"/>
+                                </constraints>
+                                <state key="normal" title="柯南"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hNK-8j-5hE">
+                                <rect key="frame" x="158" y="426" width="58" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="CNR-6d-oH7"/>
+                                    <constraint firstAttribute="width" constant="58" id="MH5-9N-wHR"/>
+                                </constraints>
+                                <state key="normal" title="小兰"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pdz-kR-2VF">
+                                <rect key="frame" x="146" y="464" width="83" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Vzz-Kt-nOD"/>
+                                    <constraint firstAttribute="width" constant="83" id="eGV-lk-1pj"/>
+                                </constraints>
+                                <state key="normal" title="大冈红叶"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="ylI-rP-Khv" firstAttribute="centerX" secondItem="PQr-Ze-W5v" secondAttribute="centerX" id="5gF-bA-Wmc"/>
                             <constraint firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="6BV-lF-sBN"/>
                             <constraint firstItem="KQZ-1w-vlD" firstAttribute="top" secondItem="su1-Pg-tdh" secondAttribute="bottom" constant="8" id="Pfo-bj-u5A"/>
+                            <constraint firstItem="hNK-8j-5hE" firstAttribute="centerX" secondItem="PQr-Ze-W5v" secondAttribute="centerX" id="SCQ-fd-4FG"/>
                             <constraint firstItem="su1-Pg-tdh" firstAttribute="centerX" secondItem="PQr-Ze-W5v" secondAttribute="centerX" id="Tdw-on-uI6"/>
+                            <constraint firstItem="Pdz-kR-2VF" firstAttribute="centerX" secondItem="PQr-Ze-W5v" secondAttribute="centerX" id="UZK-3N-5Jb"/>
+                            <constraint firstItem="ylI-rP-Khv" firstAttribute="top" secondItem="A5M-7J-77L" secondAttribute="bottom" constant="8" id="VEu-Rf-60J"/>
                             <constraint firstItem="A5M-7J-77L" firstAttribute="top" secondItem="KQZ-1w-vlD" secondAttribute="bottom" constant="8" symbolic="YES" id="cfb-er-3JN"/>
                             <constraint firstItem="A5M-7J-77L" firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="e1l-AV-tCB"/>
                             <constraint firstAttribute="centerY" secondItem="KQZ-1w-vlD" secondAttribute="centerY" id="exm-UA-ej4"/>
+                            <constraint firstItem="hNK-8j-5hE" firstAttribute="top" secondItem="ylI-rP-Khv" secondAttribute="bottom" constant="8" id="iyD-FO-r9o"/>
+                            <constraint firstItem="Pdz-kR-2VF" firstAttribute="top" secondItem="hNK-8j-5hE" secondAttribute="bottom" constant="8" id="zXw-mJ-Mbk"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
                     <navigationItem key="navigationItem" id="fJg-K5-axt"/>
+                    <connections>
+                        <outlet property="hongye" destination="Pdz-kR-2VF" id="60t-Jo-qrN"/>
+                        <outlet property="kenan" destination="ylI-rP-Khv" id="RmV-VK-26c"/>
+                        <outlet property="tap" destination="su1-Pg-tdh" id="xai-6H-9Bh"/>
+                        <outlet property="xiaolan" destination="hNK-8j-5hE" id="1fk-Ue-I2y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1498" y="-321"/>
+            <point key="canvasLocation" x="1496.8" y="-321.58920539730138"/>
         </scene>
         <!--Second-->
         <scene sceneID="wg7-f3-ORb">

@@ -10,6 +10,11 @@ import UIKit
 
 class FirstViewController: UIViewController {
     
+    @IBOutlet weak var tap: UIButton!
+    @IBOutlet weak var kenan: UIButton!
+    @IBOutlet weak var xiaolan: UIButton!
+    @IBOutlet weak var hongye: UIButton!
+    
     private var swipePresentInteractionController: SwipepRresentInteractionController!
     
     
@@ -20,16 +25,36 @@ class FirstViewController: UIViewController {
 //        self.navigationController?.delegate = self
         
         swipePresentInteractionController = SwipepRresentInteractionController(viewController: self)
+        
+        tap.addTarget(self, action: #selector(tap(_:)), for: .touchUpInside)
+        kenan.addTarget(self, action: #selector(tapKenan(_:)), for: .touchUpInside)
+        xiaolan.addTarget(self, action: #selector(tapXiaolan(_:)), for: .touchUpInside)
+        hongye.addTarget(self, action: #selector(tapHongye(_:)), for: .touchUpInside)
+        
     }
 
-    @IBAction func tap(_ sender: UIButton) {
+    //MARK:- actions.
+    
+    @objc func tap(_ sender: UIButton) {
         let viewController = TargetViewController()
         viewController.transitioningDelegate = self
         present(viewController, animated: true, completion: nil)
 //        viewController.hidesBottomBarWhenPushed = true
 //        self.navigationController?.pushViewController(viewController, animated: true)
     }
-
+    
+    @objc func tapKenan(_ sender: UIButton) {
+        print(sender.titleLabel?.text ?? "__Esdeath")
+    }
+    
+    @objc func tapXiaolan(_ sender: UIButton) {
+        print(sender.titleLabel?.text ?? "__Esdeath")
+    }
+    
+    @objc func tapHongye(_ sender: UIButton) {
+        print(sender.titleLabel?.text ?? "__Esdeath")
+    }
+    
 }
 
 extension FirstViewController: UIViewControllerTransitioningDelegate {
