@@ -1,6 +1,0 @@
-framework module Pods_MidasTests {
-  umbrella header "Pods-MidasTests-umbrella.h"
-
-  export *
-  module * { export * }
-}
